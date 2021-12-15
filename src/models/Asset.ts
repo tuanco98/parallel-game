@@ -8,8 +8,8 @@ export type Asset = {
     platform: string
     token_address?: string
     fee_brick: Double
-    create_date: Date
-    last_update: Date
+    create_date: number
+    last_update: number
     status?: number
 }
 

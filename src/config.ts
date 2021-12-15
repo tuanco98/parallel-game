@@ -8,3 +8,5 @@ export const config_PORT = process.env.PORT
 
 if (!process.env.MONGO_URI) throw new Error('MONGO_URI must be provided')
 export const config_MONGO_URI = process.env.MONGO_URI
+if (!process.env.ENTERPRISE_ID) throw new Error('ENTERPRISE_ID must be provided')
+export const config_ENTERPRISE_ID = process.env.ENTERPRISE_ID

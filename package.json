@@ -7,7 +7,7 @@
     "dev": "ts-node src/index.ts",
     "start": "node dist/index.js",
     "test": "ts-node src/test.ts",
-    "reset": "ts-node src/resetDB.ts",
+    "reset": "ts-node src/reset.ts",
     "build": "rm -rf dist && tsc",
     "dep": "docker-compose -f docker-compose.yml up --build -d",
     "dep:log": "docker-compose -f docker-compose.yml up --build"
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/tuanco98/parallel-game#readme",
   "devDependencies": {
+    "@types/bn.js": "^5.1.0",
     "@types/mongodb": "^4.0.7",
     "@types/node": "^16.11.12",
     "ts-node": "^10.4.0",
@@ -31,6 +32,8 @@
   "dependencies": {
     "apollo-server": "^3.5.0",
     "apollo-server-core": "^3.5.0",
+    "bignumber.js": "^9.0.2",
+    "bn.js": "^5.2.0",
     "dotenv": "^10.0.0",
     "graphql": "^16.1.0",
     "mongodb": "^4.2.1"

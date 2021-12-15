@@ -1,12 +1,12 @@
 
-import { Double, IndexDescription } from "mongodb"
+import { Decimal128, Double, IndexDescription } from "mongodb"
 
 export type UserAssetBalance = {
     user_id: string
     asset_id: number
-    customer_address?: string
+    user_address?: string
     sta_datetime: number
-    balance: Double
+    balance: Decimal128
     last_update: number
     status: string
 }
